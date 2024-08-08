@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxyloh3gp6p7b"]
+
+[ext_resource type="PackedScene" uid="uid://c8g5bywepugyv" path="res://Assets/player_gameplay.tscn" id="1_gn283"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t68pn"]
+size = Vector3(10, 1, 10)
+
+[node name="Gameplay" type="Node3D"]
+
+[node name="PlayerGameplay" parent="." instance=ExtResource("1_gn283")]
+
+[node name="Platform" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform2"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform2"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform3"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="Platform4" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform4"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform4"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform5" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform5"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform5"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform6" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform6"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform6"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform7" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform7"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform7"]
+size = Vector3(10, 1, 10)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Platform7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
+size = Vector3(10, 1, 10)
+
+[node name="Platform8" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform8"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform8"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform9" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform9"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform9"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform10" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform10"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform10"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform11" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform11"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform11"]
+size = Vector3(10, 1, 10)
+
+[node name="Platform12" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform12"]
+shape = SubResource("BoxShape3D_t68pn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Platform12"]
+size = Vector3(10, 1, 10)
