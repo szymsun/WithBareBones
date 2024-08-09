@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxyloh3gp6p7b"]
+[gd_scene load_steps=5 format=3 uid="uid://cxyloh3gp6p7b"]
 
 [ext_resource type="PackedScene" uid="uid://c8g5bywepugyv" path="res://Assets/player_gameplay.tscn" id="1_gn283"]
+[ext_resource type="Script" path="res://PlayableScenes/mapGenerator.gd" id="2_62k8f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t68pn"]
 size = Vector3(10, 1, 10)
@@ -127,4 +128,7 @@ size = Vector3(10, 1, 10)
 environment = SubResource("Environment_y3xof")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 1.15113, 0)
+
+[node name="Node3D" type="Node3D" parent="."]
+script = ExtResource("2_62k8f")
